@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Registrarse</title>
+<meta name="description" content="Registro en la página de Unrecht, acceso a newsletter y descuentos" />
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	
+	<header>
+		<img src="./img/cabecera.jpg" alt="cabecera" id="cabecera">
+		<div id="redes">
+			<a href="https://www.facebook.com/Unrecht/" title="Siguenos en facebook"><img src="./img/img_trans.gif" alt="facebook" id="facebook"></a>
+			<a href="https://twitter.com/Unrecht_music" title="Siguenos en twitter"><img src="./img/img_trans.gif" alt="twitter" id="twitter"></a>
+			<a href="https://www.instagram.com/unrecht_music/" title="Siguenos en instagram"><img src="./img/img_trans.gif" alt="instagram" id="instagram"></a>
+			<a href="https://www.youtube.com/channel/UCJbUzvj5IrRC2fnxGVZSkDQ" title="Siguenos en pinterest"><img src="./img/img_trans.gif" alt="pinterest" id="pinterest"></a>
+		</div>
+			
+		<nav>
+        	<ul id="menuNavegacion">
+          		<li><img src="./img/logo_inicio_grande.png" alt="logo" id="logo"></li>
+				<li><a href="./index.html" title="ir a la pagina de inicio">Inicio</a></li>
+          		<li><a href="" title="ir a la pagina de conciertos">Próximos conciertos</a></li>
+          		<li><a href="./discos.html" title="ir a la pagina de discos">Discos</a></li>
+				<li><a href="./productos.html" title="ir a la pagina de productos">Productos</a></li>
+          		<li><a href="./registrarse.html" title="ir a la pagina de registro" id="current">Registrarse</a></li>
+          		<li><a href="" title="ir a la pagina de contacto">Contactar</a></li>
+        	</ul>
+      	</nav>
+	</header>
+	
+	<main class="divided-main">
+		<h1>unrecht, industrial en estado puro</h1>
+		<hr>
+		<h2>Regístrate</h2>
+			<div id="maindiv1">
+			<p>Si te registras te enviaremos nuestro news letter con el que te mantendremos informado de todas nuestros conciertos y novedades.</p>
+            <p>Además podrás acceder a descuentos, premios y muchas más sorpresas.</p>
+            <form id="contactForm" method="post" action="/action_page.php">
+            	<fieldset id="personales">
+                	<legend>Datos personales:</legend>
+                    <ul id="datos-pers">
+                    	<li>
+							<label for="nombre">Nombre:</label>
+							<input type="text" name="nombre" id="nombre" value="escribe tu nombre y apellidos" required/>
+						</li>
+                        
+                        <li>
+							<label for="email">Email:</label>
+							<input type="email" name="email" id="email" value="escribe tu email" required/>
+						</li>
+                        <li>
+							<label for="fnacimiento">Fecha de nacimiento:</label>
+							<input type="date" name="fnacimiento" id="fnacimiento" value="" required/>
+						</li>
+                    </ul>
+                    
+                    
+                </fieldset>
+                <fieldset id="colabora">
+                	<legend>Otros datos:</legend>
+                    <ul>
+                    	<li>
+							
+                            <label for="tema-interes">Selecciona el tema de tu interés:</label>
+							<select name="tema-interes"  id="tema-interes">
+								<option value="ninguno">Ninguno en particular</option>
+								<option value="discos">Discos</option>
+								<option value="proximos-conciertos">Próximos conciertos</option>
+								<option value="marketing">Marketing</option>
+								<option value="todos">Todos</option>
+							</select>
+                            
+						</li>
+                        
+                        <li>
+                        	<label for="mensaje">Mensaje:</label>
+                        </li>
+                        <li>
+                        <textarea name="mensaje" id="mensaje" cols="54" rows="9" required>Escribe tu mensaje</textarea>
+                    	</li>
+							
+						<li>
+							<div id="privacy-div">
+                			
+							
+                			<label for="privacy" id="privacy-label">¿Aceptas las condiciones de privacidad?
+								<input type="checkbox" name="privacy" id="privacy" required/><span class="checkmark"></span></label>
+							
+							</div>
+						</li>
+						<li>
+							<input type="submit" value="Enviar" id="submit" />
+						</li>
+						<li>
+							<input type="reset" value="Borrar datos" id="reset" />
+						</li>
+                    </ul>
+                    
+                </fieldset>
+
+            
+            </form>
+		</div>
+		<div id="maindiv2">
+			<pre class="pre-header">ven a nuestro próximo concierto</pre>
+			<img src="./img/cartel.jpg" alt="Próximo concierto" id="concierto">
+			<pre class="pre-div">Próximo día 11 de mayo a las 21:00 horas</pre>
+			<pre class="pre-div">Sala Sound Stage</pre>
+			<pre class="pre-div">Avda. de Brasil 5</pre>
+		</div>
+	</main>
+	
+	<footer>
+		<div id="footerdiv">
+			<pre id="pre1">© 2019 Unrech · <a class="footerlink" href="" title="Contactar">CONTACTAR</a> ·</pre>
+			<pre id="pre2"><a class="footerlink" href="./index.html" title="ir comienzo">Ir al comienzo</a></pre>
+		</div>
+	
+	</footer>
+	
+	
+	
+</body>
+</html>
